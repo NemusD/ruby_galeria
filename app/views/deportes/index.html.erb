@@ -1,0 +1,7 @@
+<h1>Galería de Imágenes de Deportes</h1>
+
+<div class="image-gallery">
+  <% @imagenes_deportes.each do |imagen_path| %>
+    <%= image_tag '/' + File.join('images', 'deportes', File.basename(imagen_path)), class: 'img-thumbnail' %>
+  <% end %>
+</div>
